@@ -29,7 +29,7 @@ header {
 
 .header-flex h1 {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: #064273;
 }
 
@@ -38,17 +38,15 @@ header p {
   color: #333;
 }
 
-/* Navegació amb Flex */
+/* Navegació */
 nav {
   background-color: #d7fbe8;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  text-align: center;
   padding: 1rem;
-  flex-wrap: wrap;
 }
 
 nav a {
+  margin: 0 15px;
   text-decoration: none;
   color: #064273;
   font-weight: bold;
@@ -65,7 +63,7 @@ section {
   margin-bottom: 3rem;
 }
 
-/* About amb imatge al costat */
+/* About amb imatge */
 .about-flex {
   display: flex;
   flex-direction: column;
@@ -80,30 +78,30 @@ section {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Serveis amb Flex */
-.serveis {
+@media (min-width: 768px) {
+  .about-flex {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-text {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  .about-img {
+    flex: 1;
+    max-width: 400px;
+  }
+}
+
+/* Portfoli */
+.portfolio {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 0 2rem;
 }
 
-.servei {
-  background-color: #ffffff;
-  border-left: 5px solid #80cbc4;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.servei h2 {
-  margin-top: 0;
-  color: #064273;
-}
-
-/* Portfoli item */
 .portfolio-item {
   background-color: #ffffff;
   border: 1px solid #cce;
@@ -139,22 +137,7 @@ section {
   text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  background-color: #a0d2eb;
-  color: #064273;
-  text-align: center;
-  padding: 1rem;
-}
-
-/* Portfoli amb Flex per a múltiples projectes */
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-/* Resum del portfolio */
+/* Resum de projecte (pàgina inici) */
 .portfolio-resum {
   display: flex;
   flex-direction: column;
@@ -201,59 +184,31 @@ footer {
   background-color: #042f54;
 }
 
-/* RESPONSIVE: només per a pantalles grans */
-@media (min-width: 768px) {
-  .serveis {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+/* Footer */
+footer {
+  background-color: #a0d2eb;
+  color: #064273;
+  text-align: center;
+  padding: 1rem;
+}
 
-  .servei {
-    flex: 1 1 45%;
-  }
+/* Serveis (estructura antiga restaurada) */
+.serveis {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
 
-  .portfolio {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+.servei {
+  background-color: #ffffff;
+  border-left: 5px solid #80cbc4;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
 
-  .portfolio-item {
-    flex: 1 1 45%;
-  }
-
-  .about-flex {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .about-text {
-    flex: 1;
-    padding-right: 2rem;
-  }
-
-  .about-img {
-    flex: 1;
-    max-width: 400px;
-  }
-
-  .about-img img {
-    width: 100%;
-  }
-
-  .portfolio-resum {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  .portfolio-text {
-    flex: 1;
-    padding-right: 2rem;
-  }
-
-  .portfolio-img {
-    flex: 1;
-    max-width: 400px;
-  }
+.servei h2 {
+  margin-top: 0;
+  color: #064273;
 }

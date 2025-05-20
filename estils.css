@@ -5,6 +5,7 @@ body {
   background-color: #f2fdfc;
   color: #333;
 }
+
 header {
   background: linear-gradient(to right, #a0d2eb, #b5ead7);
   padding: 2rem;
@@ -36,6 +37,7 @@ header p {
   margin-top: 0.5rem;
   color: #333;
 }
+
 /* Navegació amb Flex */
 nav {
   background-color: #d7fbe8;
@@ -61,6 +63,44 @@ section {
 
 .about, .contact, .portfolio {
   margin-bottom: 3rem;
+}
+
+/* About amb imatge al costat */
+.about-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Serveis amb Flex */
+.serveis {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.servei {
+  background-color: #ffffff;
+  border-left: 5px solid #80cbc4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.servei h2 {
+  margin-top: 0;
+  color: #064273;
 }
 
 /* Portfoli item */
@@ -107,29 +147,6 @@ footer {
   padding: 1rem;
 }
 
-/* Serveis amb Flex */
-.serveis {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 0 2rem;
-}
-
-.servei {
-  background-color: #ffffff;
-  border-left: 5px solid #80cbc4;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.servei h2 {
-  margin-top: 0;
-  color: #064273;
-}
-
 /* Portfoli amb Flex per a múltiples projectes */
 .portfolio {
   display: flex;
@@ -137,61 +154,7 @@ footer {
   gap: 2rem;
 }
 
-/* Responsivitat per serveis i portfoli */
-@media (min-width: 768px) {
-  .serveis {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .servei {
-    flex: 1 1 45%;
-  }
-
-  .portfolio {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .portfolio-item {
-    flex: 1 1 45%;
-  }
-.about-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-}
-
-.about-img img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media (min-width: 768px) {
-  .about-flex {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .about-text {
-    flex: 1;
-    padding-right: 2rem;
-  }
-
-  .about-img {
-    flex: 1;
-    max-width: 400px;
-  }
-
-  .about-img img {
-    width: 100%;
-  }
-  
+/* Resum del portfolio */
 .portfolio-resum {
   display: flex;
   flex-direction: column;
@@ -238,7 +201,47 @@ footer {
   background-color: #042f54;
 }
 
+/* RESPONSIVE: només per a pantalles grans */
 @media (min-width: 768px) {
+  .serveis {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .servei {
+    flex: 1 1 45%;
+  }
+
+  .portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio-item {
+    flex: 1 1 45%;
+  }
+
+  .about-flex {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-text {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  .about-img {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .about-img img {
+    width: 100%;
+  }
+
   .portfolio-resum {
     flex-direction: row;
     text-align: left;
@@ -253,4 +256,4 @@ footer {
     flex: 1;
     max-width: 400px;
   }
-
+}

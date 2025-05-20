@@ -1,4 +1,4 @@
-/* Estil global */
+/* ===== ESTIL GLOBAL ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -38,64 +38,51 @@ header p {
   color: #333;
 }
 
-/* Navegació */
+/* ===== NAVEGACIÓ ===== */
 nav {
   background-color: #d7fbe8;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   padding: 1rem;
+  flex-wrap: wrap;
 }
 
 nav a {
-  margin: 0 15px;
   text-decoration: none;
   color: #064273;
   font-weight: bold;
 }
 
-/* Seccions generals */
+/* ===== SECCIONS GENERALS ===== */
 section {
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
 }
 
-.about, .contact, .portfolio {
-  margin-bottom: 3rem;
+/* ===== SERVEIS ===== */
+.serveis {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem;
 }
 
-/* About amb imatge */
-.about-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+.servei {
+  background-color: #ffffff;
+  border-left: 5px solid #80cbc4;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.about-img img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+.servei h2 {
+  margin-top: 0;
+  color: #064273;
 }
 
-@media (min-width: 768px) {
-  .about-flex {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .about-text {
-    flex: 1;
-    padding-right: 2rem;
-  }
-
-  .about-img {
-    flex: 1;
-    max-width: 400px;
-  }
-}
-
-/* Portfoli */
+/* ===== PORTFOLI ===== */
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -137,54 +124,7 @@ section {
   text-decoration: underline;
 }
 
-/* Resum de projecte (pàgina inici) */
-.portfolio-resum {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-  background-color: #ffffff;
-  border: 1px solid #cce;
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  margin-top: 2rem;
-}
-
-.portfolio-img img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
-}
-
-.portfolio-text {
-  text-align: center;
-}
-
-.portfolio-text h3 {
-  color: #064273;
-  margin-bottom: 0.5rem;
-}
-
-.portfolio-text p {
-  margin-bottom: 1rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #064273;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background-color: #042f54;
-}
-
-/* Footer */
+/* ===== FOOTER ===== */
 footer {
   background-color: #a0d2eb;
   color: #064273;
@@ -192,23 +132,25 @@ footer {
   padding: 1rem;
 }
 
-/* Serveis (estructura antiga restaurada) */
-.serveis {
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 0 2rem;
-}
+/* ===== RESPONSIVITAT ===== */
+@media (min-width: 768px) {
+  .portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-.servei {
-  background-color: #ffffff;
-  border-left: 5px solid #80cbc4;
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
+  .portfolio-item {
+    flex: 1 1 45%;
+  }
 
-.servei h2 {
-  margin-top: 0;
-  color: #064273;
+  .serveis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .servei {
+    flex: 1 1 45%;
+  }
 }

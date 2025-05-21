@@ -268,5 +268,29 @@ footer {
     flex: 1;
     max-width: 400px;
   }
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #064273;
+}
+
+.header-text p {
+  margin: 0.2rem 0 0;
+  color: #333;
 }
 

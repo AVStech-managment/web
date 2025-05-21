@@ -172,7 +172,7 @@ footer {
   .about-img {
     flex-shrink: 0;
   }
-}
+  
 .about-flex {
   display: flex;
   flex-direction: column;

@@ -81,3 +81,23 @@ footer {
   margin-top: 0;
   color: #064273;
 } 
+.portfolio-item ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.portfolio-item ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.portfolio-item a {
+  color: #00796b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.portfolio-item a:hover {
+  text-decoration: underline;
+}
+

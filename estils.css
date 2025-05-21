@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 
-/* Header */
+/* Header amb Flex */
 header {
   background: linear-gradient(to right, #a0d2eb, #b5ead7);
   padding: 2rem;
@@ -23,7 +23,7 @@ header h1 {
   color: #064273;
 }
 
-/* Navegació */
+/* Navegació amb Flex */
 nav {
   background-color: #d7fbe8;
   display: flex;
@@ -50,36 +50,7 @@ section {
   margin-bottom: 3rem;
 }
 
-/* Serveis */
-.serveis {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 0 2rem;
-}
-
-.servei {
-  background-color: #ffffff;
-  border-left: 5px solid #80cbc4;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-.servei h2 {
-  margin-top: 0;
-  color: #064273;
-}
-
-/* Portfoli */
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
+/* Portfoli item */
 .portfolio-item {
   background-color: #ffffff;
   border: 1px solid #cce;
@@ -123,85 +94,37 @@ footer {
   padding: 1rem;
 }
 
-/* Header amb logo */
-.header-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.logo {
-  width: 60px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* About */
-.about-flex {
+/* Serveis amb Flex */
+.serveis {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: center;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem;
 }
 
-.about-img img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Portfolio resum */
-.portfolio-resum {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+.servei {
   background-color: #ffffff;
-  border: 1px solid #cce;
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  margin-top: 2rem;
+  border-left: 5px solid #80cbc4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.portfolio-img img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
-}
-
-.portfolio-text {
-  text-align: center;
-}
-
-.portfolio-text h3 {
+.servei h2 {
+  margin-top: 0;
   color: #064273;
-  margin-bottom: 0.5rem;
 }
 
-.portfolio-text p {
-  margin-bottom: 1rem;
+/* Portfoli amb Flex per a múltiples projectes */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #064273;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background-color: #042f54;
-}
-
-/* RESPONSIVITAT */
+/* Responsivitat per serveis i portfoli */
 @media (min-width: 768px) {
   .serveis {
     flex-direction: row;
@@ -222,10 +145,52 @@ footer {
   .portfolio-item {
     flex: 1 1 45%;
   }
+.about-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
 
+.about-img img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
   .about-flex {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .about-text {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  .about-img {
+    flex-shrink: 0;
+  }
+}
+.about-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .about-flex {
+    flex-direction: row;
+    align-items: center;
   }
 
   .about-text {
@@ -240,20 +205,5 @@ footer {
 
   .about-img img {
     width: 100%;
-  }
-
-  .portfolio-resum {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  .portfolio-text {
-    flex: 1;
-    padding-right: 2rem;
-  }
-
-  .portfolio-img {
-    flex: 1;
-    max-width: 400px;
   }
 }

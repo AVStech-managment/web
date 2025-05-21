@@ -1,4 +1,3 @@
-/* ===== ESTIL GLOBAL ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -12,60 +11,33 @@ header {
   text-align: center;
 }
 
-.header-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.logo {
-  width: 40px;
-  height: auto;
-  border-radius: 5px;
-  vertical-align: middle;
-}
-
-.header-flex h1 {
+header h1 {
   margin: 0;
   font-size: 2.5rem;
   color: #064273;
 }
 
-header p {
-  margin-top: 0.5rem;
-  color: #333;
-}
-
-/* ===== NAVEGACIÓ ===== */
 nav {
   background-color: #d7fbe8;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  text-align: center;
   padding: 1rem;
-  flex-wrap: wrap;
 }
 
 nav a {
+  margin: 0 15px;
   text-decoration: none;
   color: #064273;
   font-weight: bold;
 }
 
-/* ===== SECCIONS GENERALS ===== */
 section {
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
 }
 
-/* ===== PORTFOLI ===== */
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.about, .contact, .portfolio {
+  margin-bottom: 3rem;
 }
 
 .portfolio-item {
@@ -83,27 +55,6 @@ section {
   border-radius: 5px;
 }
 
-.portfolio-item ul {
-  padding-left: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.portfolio-item ul li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-}
-
-.portfolio-item a {
-  color: #00796b;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.portfolio-item a:hover {
-  text-decoration: underline;
-}
-
-/* ===== FOOTER ===== */
 footer {
   background-color: #a0d2eb;
   color: #064273;
@@ -111,7 +62,6 @@ footer {
   padding: 1rem;
 }
 
-/* ===== SERVEIS ===== */
 .serveis {
   max-width: 1000px;
   margin: 2rem auto;
@@ -130,17 +80,4 @@ footer {
 .servei h2 {
   margin-top: 0;
   color: #064273;
-}
-
-/* ===== RESPONSIVITAT ===== */
-@media (min-width: 768px) {
-  .portfolio {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .portfolio-item {
-    flex: 1 1 45%;
-  }
-}
+} 

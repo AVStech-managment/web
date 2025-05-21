@@ -207,4 +207,66 @@ footer {
     width: 100%;
   }
 }
+.portfolio-resum {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #cce;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-top: 2rem;
+}
+
+.portfolio-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-text {
+  text-align: center;
+}
+
+.portfolio-text h3 {
+  color: #064273;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-text p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #064273;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #042f54;
+}
+
+@media (min-width: 768px) {
+  .portfolio-resum {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .portfolio-text {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  .portfolio-img {
+    flex: 1;
+    max-width: 400px;
+  }
+}
 

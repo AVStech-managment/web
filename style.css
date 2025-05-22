@@ -79,7 +79,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* Botó enllaç */
 .button-link {
   display: inline-block;
   background: #007c91;
@@ -139,7 +138,6 @@ form button:hover {
   border-radius: 6px;
 }
 
-/* Targetes del PORTFOLI i SERVEIS */
 .projecte,
 .servei {
   background: white;
@@ -176,15 +174,7 @@ form button:hover {
   margin-right: 0.5rem;
 }
 
-/* GRID de serveis */
-.serveis-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-/* BLOCS NOTÍCIES I CONSELLS */
+/* Notícies i Consells */
 .bloc {
   margin-top: 2rem;
   padding: 1.5rem;
@@ -198,7 +188,6 @@ form button:hover {
   margin-bottom: 1.5rem;
 }
 
-/* Notícies en graella */
 .noticies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -243,15 +232,15 @@ form button:hover {
   margin: 0;
 }
 
-/* Logotip al costat del títol del client */
+/* 🔄 Logotip al costat del nom del client - més gran */
 .client-title {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .client-logo {
-  height: 60px;
+  height: 80px;
   width: auto;
-  border-radius: 6px;
+  border-radius: 8px;
 }

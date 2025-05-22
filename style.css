@@ -55,8 +55,7 @@ header h1 {
   border-radius: 6px;
 }
 
-.menu a.active,
-.menu a:hover {
+.menu a.active, .menu a:hover {
   background-color: #b2ebf2;
   color: #004d40;
 }
@@ -79,6 +78,7 @@ footer {
   margin-top: 2rem;
 }
 
+/* Botó enllaç */
 .button-link {
   display: inline-block;
   background: #c6ffa5;
@@ -103,59 +103,15 @@ footer {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Portfolio Preview */
-.portfolio-preview {
+/* Afegit per imatge i text costat a costat al resum del portfoli */
+.portfolio-image-text {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
 }
 
-.portfolio-image {
-  flex: 1 1 300px;
-}
-
-.portfolio-image img {
+.portfolio-image-text img {
   max-width: 100%;
   border-radius: 8px;
-}
-
-.portfolio-text {
-  flex: 2 1 400px;
-}
-
-/* Formulari */
-form.form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-form input,
-form textarea {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-form button {
-  background: #00796b;
-  color: white;
-  padding: 0.8rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background: #004d40;
-}
-
-.info-planificacio {
-  margin-top: 1.5rem;
-  background: #e0f2f1;
-  padding: 1rem;
-  border-radius: 6px;
 }

@@ -17,6 +17,7 @@ body {
 .logo-img {
   width: 50px;
   height: auto;
+  border-radius: 10px; /* 🔄 NOVETAT: esquines arrodonides per la imatge del logo */
 }
 
 header {
@@ -232,7 +233,7 @@ form button:hover {
   margin: 0;
 }
 
-/* 🔄 Logotip al costat del nom del client - més gran */
+/* 🔄 Logotip al costat del nom del client */
 .client-title {
   display: flex;
   align-items: center;
@@ -245,7 +246,7 @@ form button:hover {
   border-radius: 8px;
 }
 
-/* Imatge petita a l'inici - resum portfoli */
+/* 🔽 Imatge petita del portfoli a la pàgina inicial */
 .portfolio-image-text {
   display: flex;
   flex-direction: column;

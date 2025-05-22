@@ -15,9 +15,9 @@ body {
 }
 
 .logo-img {
-  width: 50px;
+  width: 80px;
   height: auto;
-  border-radius: 10px; /* 🔄 NOVETAT: esquines arrodonides per la imatge del logo */
+  border-radius: 12px;
 }
 
 header {
@@ -175,7 +175,6 @@ form button:hover {
   margin-right: 0.5rem;
 }
 
-/* Notícies i Consells */
 .bloc {
   margin-top: 2rem;
   padding: 1.5rem;
@@ -225,7 +224,6 @@ form button:hover {
   font-size: 0.95rem;
 }
 
-/* Consells */
 .llista-consells {
   list-style: none;
   padding-left: 1rem;
@@ -233,7 +231,6 @@ form button:hover {
   margin: 0;
 }
 
-/* 🔄 Logotip al costat del nom del client */
 .client-title {
   display: flex;
   align-items: center;
@@ -246,7 +243,6 @@ form button:hover {
   border-radius: 8px;
 }
 
-/* 🔽 Imatge petita del portfoli a la pàgina inicial */
 .portfolio-image-text {
   display: flex;
   flex-direction: column;

@@ -245,12 +245,27 @@ form button:hover {
   border-radius: 8px;
 }
 
-/* 🔽 NOVA CLASSE: imatge petita per al resum del portfoli */
+/* Imatge petita a l'inici - resum portfoli */
+.portfolio-image-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .portfolio-image-text {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
 .img-portada {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   border-radius: 8px;
   display: block;
-  margin-bottom: 1rem;
 }

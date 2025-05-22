@@ -244,3 +244,13 @@ form button:hover {
   width: auto;
   border-radius: 8px;
 }
+
+/* 🔽 NOVA CLASSE: imatge petita per al resum del portfoli */
+.img-portada {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 1rem;
+}

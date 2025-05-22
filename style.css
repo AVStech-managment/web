@@ -155,14 +155,6 @@ form button:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-.projecte-img {
-  width: 100%;
-  max-height: 350px;
-  object-fit: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
 .projecte-contingut {
   padding: 1.5rem;
 }
@@ -251,15 +243,15 @@ form button:hover {
   margin: 0;
 }
 
-/* 🔄 AFEGIT per al logotip al costat del nom del client */
+/* Logotip al costat del títol del client */
 .client-title {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .client-logo {
-  height: 40px;
+  height: 60px;
   width: auto;
-  border-radius: 4px;
+  border-radius: 6px;
 }

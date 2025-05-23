@@ -1,80 +1,87 @@
 <!DOCTYPE html> 
-<html lang="ca">
+<html lang="ca"> <!-- Defineix l'idioma de la pàgina com a català -->
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AVS Tech-Management</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo.png" type="image/x-icon" />
+  <meta charset="UTF-8" /> <!-- Codificació de caràcters -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Configura la visualització per a dispositius mòbils -->
+  <title>AVS Tech-Management</title> <!-- Títol que es mostra a la pestanya del navegador -->
+  <link rel="stylesheet" href="style.css" /> <!-- Enllaça la fulla d'estils externa -->
+  <link rel="icon" href="logo.png" type="image/x-icon" /> <!-- Defineix la icona que apareix a la pestanya -->
 </head>
+
 <body>
-  <header class="header">
-  <div class="logo-bar">
-      <img src="logo.png" alt="Logotip AVS" class="logo-img" />
+  <header class="header"> <!-- Capçalera del lloc -->
+    <div class="logo-bar"> <!-- Barra amb el logotip i el nom -->
+      <img src="logo.png" alt="Logotip AVS" class="logo-img" /> <!-- Imatge del logotip -->
       <div class="logo-text">
-        <h1>AVS Tech-Management</h1>
-        <p class="slogan"><b>La teva tecnologia, el nostre fi.</b></p>
+        <h1>AVS Tech-Management</h1> <!-- Nom de l’empresa -->
+        <p class="slogan"><b>La teva tecnologia, el nostre fi.</b></p> <!-- Eslogan de l'empresa -->
       </div>
     </div>
-    <nav>
+    <nav> <!-- Menú de navegació principal -->
       <ul class="menu">
-        <li><a href="./index.html" class="active">Inici</a></li>
-        <li><a href="./serveis.html">Serveis</a></li>
-        <li><a href="./portfolio.html">Portfoli</a></li>
-        <li><a href="./noticies.html">Notícies i Consells</a></li>
-        <li><a href="./contacte.html">Contacte</a></li>
+        <li><a href="./index.html" class="active">Inici</a></li> <!-- Enllaç actiu a la pàgina inicial -->
+        <li><a href="./serveis.html">Serveis</a></li> <!-- Enllaç a la pàgina de serveis -->
+        <li><a href="./portfolio.html">Portfoli</a></li> <!-- Enllaç al portfoli -->
+        <li><a href="./noticies.html">Notícies i Consells</a></li> <!-- Enllaç a notícies -->
+        <li><a href="./contacte.html">Contacte</a></li> <!-- Enllaç a la pàgina de contacte -->
       </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- SOBRE NOSALTRES -->
+  <main> <!-- Contingut principal de la pàgina -->
+
+    <!-- SECCIÓ SOBRE NOSALTRES -->
     <section id="sobre" class="section">
-      <h2>Sobre nosaltres</h2>
-      <p>A AVS Tech-Management som especialistes en solucions informàtiques adaptades a les necessitats reals de cada client. Amb una àmplia experiència en el sector tecnològic, oferim serveis integrals que abasten des de la instal·lació de cablejat i sistemes operatius fins al muntatge d’equips i el desenvolupament web.</p>
-      <p>Treballem tant amb empreses com amb professionals independents, proporcionant un tracte pròxim, assessorament tècnic personalitzat i una clara orientació a resultats. Ens comprometem amb cada projecte com si fos propi, buscant sempre la màxima eficiència i fiabilitat.</p>
-      <p>El nostre objectiu és fer que la tecnologia sigui una eina realment útil, segura i accessible per als nostres clients. Sigui quin sigui el teu repte digital, som aquí per ajudar-te a fer-lo realitat.</p>
+      <h2>Sobre nosaltres</h2> <!-- Títol de la secció -->
+      <p>A AVS Tech-Management som especialistes en solucions informàtiques adaptades...</p> <!-- Text descriptiu -->
+      <p>Treballem tant amb empreses com amb professionals independents...</p>
+      <p>El nostre objectiu és fer que la tecnologia sigui una eina útil...</p>
     </section>
 
-    <!-- RESUM PORTFOLI AMB IMATGE -->
+    <!-- SECCIÓ PORTFOLI AMB IMATGE -->
     <section class="section light-bg">
       <h2>Projectes realitzats</h2>
-      <div class="portfolio-image-text">
+      <div class="portfolio-image-text"> <!-- Contenidor amb imatge i text -->
         <div>
-          <img src="equiptecnic.png" alt="Projecte AventuraTravel" class="img-portada" />
+          <img src="equiptecnic.png" alt="Projecte AventuraTravel" class="img-portada" /> <!-- Imatge del projecte -->
         </div>
         <div>
-          <p>Hem treballat amb clients com <strong>AventuraTravel</strong>, oferint serveis complets: cablejat, configuració de sistemes, muntatge de maquinari i desenvolupament web amb WordPress.</p>
-          <a class="button-link" href="portfolio.html">Veure el portfoli complet</a>
+          <p>Hem treballat amb clients com <strong>AventuraTravel</strong>...</p> <!-- Descripció breu del projecte -->
+          <a class="button-link" href="portfolio.html">Veure el portfoli complet</a> <!-- Botó per veure més -->
         </div>
       </div>
     </section>
 
-    <!-- FAQ INICI -->
+    <!-- SECCIÓ DE PREGUNTES FREQÜENTS -->
     <section class="section light-bg">
       <h2>Preguntes freqüents</h2>
       <div class="faq">
+        <!-- Pregunta 1 -->
         <details>
           <summary>Quins sistemes operatius instal·leu?</summary>
-          <p>Instal·lem sistemes operatius basats en Ubuntu (Linux), Windows i també opcions duals. Aquesta configuració permet que un mateix equip pugui executar ambdós sistemes segons les necessitats de l’usuari. A més, proporcionem suport per a la personalització i actualització del sistema.</p>
+          <p>Instal·lem sistemes operatius basats en Ubuntu, Windows, etc.</p>
         </details>
+        <!-- Pregunta 2 -->
         <details>
           <summary>Feu manteniment a distància?</summary>
-          <p>Sí. Disposem d’un servei de manteniment remot que permet intervenir en els equips dels clients sense necessitat de desplaçament. Utilitzem eines segures de connexió per garantir un servei ràpid i eficaç, tant per incidències puntuals com per revisions periòdiques.</p>
+          <p>Sí. Disposem d’un servei de manteniment remot...</p>
         </details>
+        <!-- Pregunta 3 -->
         <details>
           <summary>Feu pàgines web per empreses petites?</summary>
-          <p>Sí, treballem amb tot tipus de negocis, incloses les microempreses. Desenvolupem webs amb WordPress adaptades al pressupost del client, amb disseny responsive i optimització per a cercadors (SEO). També oferim formació bàsica per a la gestió del contingut.</p>
+          <p>Sí, treballem amb tot tipus de negocis...</p>
         </details>
       </div>
+      <!-- Botó per contactar -->
       <div style="margin-top: 2rem;">
         <a class="button-link" href="contacte.html">Sol·licitar pressupost i planificació</a>
       </div>
     </section>
   </main>
 
+  <!-- PEU DE PÀGINA -->
   <footer>
-    <p>&copy; 2025 AVS Tech-Management</p>
+    <p>&copy; 2025 AVS Tech-Management</p> <!-- Drets d'autor -->
   </footer>
 </body>
 </html>

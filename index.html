@@ -1,82 +1,80 @@
-<!DOCTYPE html> 
-<html lang="ca">
+<!DOCTYPE html> <!-- Declaració del tipus de document HTML5 -->
+<html lang="ca"> <!-- Idioma establert a català -->
 <head>
-  <meta charset="UTF-8" /> <!-- Defineix el conjunt de caràcters com UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Fa que la pàgina sigui responsive -->
-  <title>AVS Tech-Management</title> <!-- Títol que apareix a la pestanya del navegador -->
-  <link rel="stylesheet" href="style.css" /> <!-- Enllaç al fitxer d'estils CSS -->
-  <link rel="icon" href="logo.png" type="image/x-icon" /> <!-- Icona de la pestanya del navegador -->
+  <meta charset="UTF-8" /> <!-- Codificació de caràcters en UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Escalat adaptatiu per a dispositius mòbils -->
+  <title>AVS Tech-Management</title> <!-- Títol que apareixerà a la pestanya del navegador -->
+  <link rel="stylesheet" href="style.css" /> <!-- Enllaç al fitxer d’estils CSS -->
+  <link rel="icon" href="logo.png" type="image/x-icon" /> <!-- Favicon del lloc web -->
 </head>
 <body>
-  <header class="header">
-    <!-- Barra del logotip i nom -->
-    <div class="logo-bar">
-      <img src="logo.png" alt="Logotip AVS" class="logo-img" /> <!-- Logotip -->
+  <header class="header"> <!-- Capçalera de la pàgina -->
+    <div class="logo-bar"> <!-- Barra amb logotip i nom -->
+      <img src="logo.png" alt="Logotip AVS" class="logo-img" /> <!-- Imatge del logotip -->
       <div class="logo-text">
-        <h1>AVS Tech-Management</h1> <!-- Nom de l'empresa -->
-        <p class="slogan"><b>La teva tecnologia, el nostre fi.</b></p> <!-- Eslogan -->
+        <h1>AVS Tech-Management</h1> <!-- Títol del lloc web -->
+        <p class="slogan"><b>La teva tecnologia, el nostre fi.</b></p> <!-- Eslogan de l'empresa -->
       </div>
     </div>
-    <!-- Menú de navegació -->
-    <nav>
+    <nav> <!-- Menú de navegació -->
       <ul class="menu">
-        <li><a href="./index.html" class="active">Inici</a></li> <!-- Enllaç actiu -->
-        <li><a href="./serveis.html">Serveis</a></li> <!-- Enllaç a serveis -->
+        <li><a href="./index.html" class="active">Inici</a></li> <!-- Enllaç actiu a la pàgina d'inici -->
+        <li><a href="./serveis.html">Serveis</a></li> <!-- Enllaç a la pàgina de serveis -->
         <li><a href="./portfolio.html">Portfoli</a></li> <!-- Enllaç al portfoli -->
-        <li><a href="./noticies.html">Notícies i Consells</a></li> <!-- Enllaç a notícies -->
-        <li><a href="./contacte.html">Contacte</a></li> <!-- Enllaç a contacte -->
+        <li><a href="./noticies.html">Notícies i Consells</a></li> <!-- Enllaç a la secció de notícies -->
+        <li><a href="./contacte.html">Contacte</a></li> <!-- Enllaç a la pàgina de contacte -->
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main> <!-- Cos principal del lloc -->
     <!-- SOBRE NOSALTRES -->
-    <section id="sobre" class="section">
-      <h2>Sobre nosaltres</h2> <!-- Títol de la secció -->
-      <p>A AVS Tech-Management som especialistes en solucions informàtiques adaptades a les necessitats reals de cada client...</p> <!-- Descripció de l'empresa -->
-      <p>Treballem tant amb empreses com amb professionals independents...</p>
-      <p>El nostre objectiu és fer que la tecnologia sigui una eina realment útil...</p>
+    <section id="sobre" class="section"> <!-- Secció informativa sobre l’empresa -->
+      <h2>Sobre nosaltres</h2>
+      <p>A AVS Tech-Management som especialistes en solucions informàtiques...</p> <!-- Paràgraf introductori sobre serveis -->
+      <p>Treballem tant amb empreses com amb professionals independents...</p> <!-- Paràgraf sobre la filosofia de treball -->
+      <p>El nostre objectiu és fer que la tecnologia sigui una eina realment útil...</p> <!-- Objectius de l’empresa -->
     </section>
 
     <!-- RESUM PORTFOLI AMB IMATGE -->
-    <section class="section light-bg">
-      <h2>Projectes realitzats</h2> <!-- Títol del portfoli -->
-      <div class="portfolio-image-text">
+    <section class="section light-bg"> <!-- Secció amb fons clar sobre projectes -->
+      <h2>Projectes realitzats</h2>
+      <div class="portfolio-image-text"> <!-- Contingut amb imatge i text -->
         <div>
-          <img src="equiptecnic.png" alt="Projecte AventuraTravel" class="img-portada" /> <!-- Imatge d’un projecte -->
+          <img src="equiptecnic.png" alt="Projecte AventuraTravel" class="img-portada" /> <!-- Imatge representativa d’un projecte -->
         </div>
         <div>
-          <p>Hem treballat amb clients com <strong>AventuraTravel</strong>...</p> <!-- Breu explicació del projecte -->
-          <a class="button-link" href="portfolio.html">Veure el portfoli complet</a> <!-- Enllaç al portfoli -->
+          <p>Hem treballat amb clients com <strong>AventuraTravel</strong>...</p> <!-- Descripció breu del projecte -->
+          <a class="button-link" href="portfolio.html">Veure el portfoli complet</a> <!-- Enllaç al portfoli complet -->
         </div>
       </div>
     </section>
 
     <!-- FAQ INICI -->
-    <section class="section light-bg">
-      <h2>Preguntes freqüents</h2> <!-- Títol de la secció de preguntes freqüents -->
+    <section class="section light-bg"> <!-- Secció de preguntes freqüents -->
+      <h2>Preguntes freqüents</h2>
       <div class="faq">
-        <details> <!-- Element expandible -->
-          <summary>Quins sistemes operatius instal·leu?</summary> <!-- Pregunta -->
-          <p>Instal·lem sistemes operatius basats en Ubuntu (Linux), Windows...</p> <!-- Resposta -->
+        <details> <!-- Bloc desplegable FAQ 1 -->
+          <summary>Quins sistemes operatius instal·leu?</summary>
+          <p>Instal·lem sistemes operatius basats en Ubuntu (Linux), Windows...</p>
         </details>
-        <details>
+        <details> <!-- Bloc desplegable FAQ 2 -->
           <summary>Feu manteniment a distància?</summary>
           <p>Sí. Disposem d’un servei de manteniment remot...</p>
         </details>
-        <details>
+        <details> <!-- Bloc desplegable FAQ 3 -->
           <summary>Feu pàgines web per empreses petites?</summary>
-          <p>Sí, treballem amb tot tipus de negocis, incloses les microempreses...</p>
+          <p>Sí, treballem amb tot tipus de negocis...</p>
         </details>
       </div>
       <div style="margin-top: 2rem;">
-        <a class="button-link" href="contacte.html">Sol·licitar pressupost i planificació</a> <!-- Botó de crida a l'acció -->
+        <a class="button-link" href="contacte.html">Sol·licitar pressupost i planificació</a> <!-- Enllaç al formulari de contacte -->
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 AVS Tech-Management</p> <!-- Peu de pàgina amb drets d'autor -->
+  <footer> <!-- Peu de pàgina -->
+    <p>&copy; 2025 AVS Tech-Management</p> <!-- Text de drets d’autor -->
   </footer>
 </body>
 </html>

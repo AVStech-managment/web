@@ -1,45 +1,52 @@
+/* Estilos generales del cuerpo del documento */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', sans-serif; /* Tipografía principal */
   margin: 0;
   padding: 0;
-  background: #f0f8ff;
-  color: #333;
+  background: #f0f8ff; /* Color de fondo claro */
+  color: #333; /* Color de texto principal */
 }
 
+/* Barra del logo con texto y/o imagen */
 .logo-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  display: flex; /* Elementos en línea */
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+  gap: 1rem; /* Espacio entre elementos */
   padding-top: 1rem;
 }
 
+/* Imagen del logo */
 .logo-img {
-  width: 80px;          
+  width: 80px;
   height: auto;
-  border-radius: 12px;  
+  border-radius: 12px; /* Bordes redondeados */
 }
 
+/* Contenedor del texto del logo */
 .logo-text {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Dirección vertical */
   align-items: flex-start;
 }
 
+/* Título principal del logo */
 .logo-text h1 {
   margin: 0;
   font-size: 2rem;
   color: #01579b;
 }
 
+/* Slogan o subtítulo */
 .slogan {
   font-size: 1rem;
   color: #007c91;
   margin: 0;
   margin-top: 0.2rem;
-  font-style: italic;
+  font-style: italic; /* Texto en cursiva */
 }
 
+/* Encabezado de la página */
 header {
   background: linear-gradient(to bottom, #b3e5fc, #e0f7fa);
   text-align: center;
@@ -47,15 +54,16 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
+/* Menú de navegación */
 .menu {
   display: flex;
   justify-content: center;
-  list-style: none;
+  list-style: none; /* Sin viñetas */
   padding: 0;
   margin-bottom: 0;
   background: #ccf2f4;
   border-top: 1px solid #ddd;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite que el menú se divida en varias líneas si es necesario */
 }
 
 .menu li {
@@ -70,22 +78,26 @@ header {
   border-radius: 6px;
 }
 
+/* Estilo cuando se pasa el cursor o está activo */
 .menu a.active,
 .menu a:hover {
   background-color: #b2ebf2;
   color: #004d40;
 }
 
+/* Secciones principales del sitio */
 .section {
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
 }
 
+/* Fondo claro para secciones */
 .light-bg {
   background: #f9fdff;
 }
 
+/* Pie de página */
 footer {
   text-align: center;
   padding: 1rem;
@@ -94,6 +106,7 @@ footer {
   margin-top: 2rem;
 }
 
+/* Botones con apariencia de enlaces */
 .button-link {
   display: inline-block;
   background: #007c91;
@@ -104,11 +117,12 @@ footer {
   font-weight: bold;
 }
 
+/* Hover para los botones */
 .button-link:hover {
   background: #c6ffa5;
 }
 
-/* FAQ */
+/* Estilo para preguntas frecuentes (FAQ) */
 .faq details {
   background: #ffffff;
   padding: 1rem;
@@ -117,7 +131,7 @@ footer {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Formulari */
+/* Formulario */
 form.form {
   display: flex;
   flex-direction: column;
@@ -125,6 +139,7 @@ form.form {
   margin-top: 1rem;
 }
 
+/* Inputs y áreas de texto */
 form input,
 form textarea {
   padding: 0.8rem;
@@ -133,6 +148,7 @@ form textarea {
   font-size: 1rem;
 }
 
+/* Botón del formulario */
 form button {
   background: #00796b;
   color: white;
@@ -142,10 +158,12 @@ form button {
   cursor: pointer;
 }
 
+/* Hover en el botón del formulario */
 form button:hover {
   background: #004d40;
 }
 
+/* Información adicional destacada */
 .info-planificacio {
   margin-top: 1.5rem;
   background: #e0f2f1;
@@ -153,6 +171,7 @@ form button:hover {
   border-radius: 6px;
 }
 
+/* Tarjetas de proyecto o servicio */
 .projecte,
 .servei {
   background: white;
@@ -163,6 +182,7 @@ form button:hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Hover sobre servicios */
 .servei:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -183,12 +203,14 @@ form button:hover {
   padding-left: 0;
 }
 
+/* Check verde delante de los elementos de la lista */
 .projecte-contingut ul li::before {
   content: '✔';
   color: green;
   margin-right: 0.5rem;
 }
 
+/* Sección de blog o artículos */
 .bloc {
   margin-top: 2rem;
   padding: 1.5rem;
@@ -202,12 +224,14 @@ form button:hover {
   margin-bottom: 1.5rem;
 }
 
+/* Grid para noticias */
 .noticies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
 }
 
+/* Tarjeta individual de noticia */
 .noticia {
   background: #f9fdff;
   border-radius: 8px;
@@ -216,6 +240,7 @@ form button:hover {
   transition: transform 0.2s ease;
 }
 
+/* Hover sobre noticia */
 .noticia:hover {
   transform: translateY(-4px);
 }
@@ -238,6 +263,7 @@ form button:hover {
   font-size: 0.95rem;
 }
 
+/* Lista de consejos */
 .llista-consells {
   list-style: none;
   padding-left: 1rem;
@@ -245,6 +271,7 @@ form button:hover {
   margin: 0;
 }
 
+/* Título con logo de cliente */
 .client-title {
   display: flex;
   align-items: center;
@@ -257,6 +284,7 @@ form button:hover {
   border-radius: 8px;
 }
 
+/* Imagen con texto en el portfolio */
 .portfolio-image-text {
   display: flex;
   flex-direction: column;
@@ -265,6 +293,7 @@ form button:hover {
   text-align: center;
 }
 
+/* En pantallas grandes se reorganiza el layout */
 @media (min-width: 768px) {
   .portfolio-image-text {
     flex-direction: row;
@@ -273,6 +302,7 @@ form button:hover {
   }
 }
 
+/* Imagen de portada */
 .img-portada {
   width: 100%;
   max-width: 300px;

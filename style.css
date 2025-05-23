@@ -1,75 +1,76 @@
-/* Estilos generales del cuerpo del documento */
+/* Estils generals del cos del document */
 body {
-  font-family: 'Segoe UI', sans-serif; /* Tipografía principal */
+  font-family: 'Segoe UI', sans-serif; /* Tipografia principal del lloc */
   margin: 0;
   padding: 0;
-  background: #f0f8ff; /* Color de fondo claro */
-  color: #333; /* Color de texto principal */
+  background: #f0f8ff; /* Color de fons suau/blau clar */
+  color: #333; /* Color del text per defecte */
 }
 
-/* Barra del logo con texto y/o imagen */
+/* Barra del logotip amb imatge i text */
 .logo-bar {
-  display: flex; /* Elementos en línea */
-  align-items: center; /* Centrado vertical */
-  justify-content: center; /* Centrado horizontal */
-  gap: 1rem; /* Espacio entre elementos */
+  display: flex; /* Distribueix els elements en línia horitzontal */
+  align-items: center; /* Centrat vertical */
+  justify-content: center; /* Centrat horitzontal */
+  gap: 1rem; /* Espai entre la imatge i el text */
   padding-top: 1rem;
 }
 
-/* Imagen del logo */
+/* Estil per a la imatge del logotip */
 .logo-img {
   width: 80px;
   height: auto;
-  border-radius: 12px; /* Bordes redondeados */
+  border-radius: 12px; /* Cantons arrodonits */
 }
 
-/* Contenedor del texto del logo */
+/* Contenidor del text del logotip */
 .logo-text {
   display: flex;
-  flex-direction: column; /* Dirección vertical */
-  align-items: flex-start;
+  flex-direction: column; /* Organitza el text en columna */
+  align-items: flex-start; /* Alineació a l'esquerra */
 }
 
-/* Título principal del logo */
+/* Títol de l'empresa */
 .logo-text h1 {
   margin: 0;
   font-size: 2rem;
-  color: #01579b;
+  color: #01579b; /* Blau corporatiu */
 }
 
-/* Slogan o subtítulo */
+/* Eslogan de l'empresa */
 .slogan {
   font-size: 1rem;
   color: #007c91;
   margin: 0;
   margin-top: 0.2rem;
-  font-style: italic; /* Texto en cursiva */
+  font-style: italic; /* Text en cursiva */
 }
 
-/* Encabezado de la página */
+/* Capçalera general de la pàgina */
 header {
-  background: linear-gradient(to bottom, #b3e5fc, #e0f7fa);
+  background: linear-gradient(to bottom, #b3e5fc, #e0f7fa); /* Degradat blau clar */
   text-align: center;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ddd;
 }
 
-/* Menú de navegación */
+/* Menú de navegació */
 .menu {
   display: flex;
   justify-content: center;
-  list-style: none; /* Sin viñetas */
+  list-style: none; /* Elimina punts de llista */
   padding: 0;
   margin-bottom: 0;
   background: #ccf2f4;
   border-top: 1px solid #ddd;
-  flex-wrap: wrap; /* Permite que el menú se divida en varias líneas si es necesario */
+  flex-wrap: wrap; /* Permet salt de línia en pantalles petites */
 }
 
 .menu li {
   margin: 0.5rem 1rem;
 }
 
+/* Enllaços del menú */
 .menu a {
   text-decoration: none;
   color: #007c91;
@@ -78,35 +79,35 @@ header {
   border-radius: 6px;
 }
 
-/* Estilo cuando se pasa el cursor o está activo */
+/* Estil quan el ratolí passa per sobre o quan està actiu */
 .menu a.active,
 .menu a:hover {
   background-color: #b2ebf2;
   color: #004d40;
 }
 
-/* Secciones principales del sitio */
+/* Seccions principals del lloc */
 .section {
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
 }
 
-/* Fondo claro para secciones */
+/* Fons clar per a seccions destacades */
 .light-bg {
   background: #f9fdff;
 }
 
-/* Pie de página */
+/* Peu de pàgina */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #007c91;
+  background: #007c91; /* Blau fort */
   color: white;
   margin-top: 2rem;
 }
 
-/* Botones con apariencia de enlaces */
+/* Estil per a botons que semblen enllaços */
 .button-link {
   display: inline-block;
   background: #007c91;
@@ -117,21 +118,21 @@ footer {
   font-weight: bold;
 }
 
-/* Hover para los botones */
+/* Canvi de color al passar el ratolí pel botó */
 .button-link:hover {
   background: #c6ffa5;
 }
 
-/* Estilo para preguntas frecuentes (FAQ) */
+/* Estil per a les preguntes freqüents (FAQ) */
 .faq details {
   background: #ffffff;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ombra lleugera */
 }
 
-/* Formulario */
+/* Formulari de contacte */
 form.form {
   display: flex;
   flex-direction: column;
@@ -139,7 +140,7 @@ form.form {
   margin-top: 1rem;
 }
 
-/* Inputs y áreas de texto */
+/* Camps d'entrada i text del formulari */
 form input,
 form textarea {
   padding: 0.8rem;
@@ -148,7 +149,7 @@ form textarea {
   font-size: 1rem;
 }
 
-/* Botón del formulario */
+/* Botó del formulari */
 form button {
   background: #00796b;
   color: white;
@@ -158,12 +159,12 @@ form button {
   cursor: pointer;
 }
 
-/* Hover en el botón del formulario */
+/* Hover del botó del formulari */
 form button:hover {
   background: #004d40;
 }
 
-/* Información adicional destacada */
+/* Bloc d'informació destacada */
 .info-planificacio {
   margin-top: 1.5rem;
   background: #e0f2f1;
@@ -171,7 +172,7 @@ form button:hover {
   border-radius: 6px;
 }
 
-/* Tarjetas de proyecto o servicio */
+/* Estil per a targetes de projectes o serveis */
 .projecte,
 .servei {
   background: white;
@@ -182,12 +183,13 @@ form button:hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hover sobre servicios */
+/* Animació quan el cursor passa per sobre d'un servei */
 .servei:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
+/* Contingut dels projectes */
 .projecte-contingut {
   padding: 1.5rem;
 }
@@ -203,14 +205,14 @@ form button:hover {
   padding-left: 0;
 }
 
-/* Check verde delante de los elementos de la lista */
+/* Marca de verificació (check) en verd davant els ítems de la llista */
 .projecte-contingut ul li::before {
   content: '✔';
   color: green;
   margin-right: 0.5rem;
 }
 
-/* Sección de blog o artículos */
+/* Secció de bloc o articles */
 .bloc {
   margin-top: 2rem;
   padding: 1.5rem;
@@ -224,14 +226,14 @@ form button:hover {
   margin-bottom: 1.5rem;
 }
 
-/* Grid para noticias */
+/* Disseny en graella per a les notícies */
 .noticies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
 }
 
-/* Tarjeta individual de noticia */
+/* Targeta individual de notícia */
 .noticia {
   background: #f9fdff;
   border-radius: 8px;
@@ -240,7 +242,7 @@ form button:hover {
   transition: transform 0.2s ease;
 }
 
-/* Hover sobre noticia */
+/* Efecte hover en les notícies */
 .noticia:hover {
   transform: translateY(-4px);
 }
@@ -263,7 +265,7 @@ form button:hover {
   font-size: 0.95rem;
 }
 
-/* Lista de consejos */
+/* Llista de consells */
 .llista-consells {
   list-style: none;
   padding-left: 1rem;
@@ -271,7 +273,7 @@ form button:hover {
   margin: 0;
 }
 
-/* Título con logo de cliente */
+/* Títol amb logotip de client */
 .client-title {
   display: flex;
   align-items: center;
@@ -284,7 +286,7 @@ form button:hover {
   border-radius: 8px;
 }
 
-/* Imagen con texto en el portfolio */
+/* Contenidor d'imatge i text al portfoli */
 .portfolio-image-text {
   display: flex;
   flex-direction: column;
@@ -293,7 +295,7 @@ form button:hover {
   text-align: center;
 }
 
-/* En pantallas grandes se reorganiza el layout */
+/* Canvis de layout en pantalles grans (resposta adaptativa) */
 @media (min-width: 768px) {
   .portfolio-image-text {
     flex-direction: row;
@@ -302,7 +304,7 @@ form button:hover {
   }
 }
 
-/* Imagen de portada */
+/* Imatge de portada del projecte */
 .img-portada {
   width: 100%;
   max-width: 300px;
